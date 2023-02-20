@@ -70,25 +70,117 @@
               in between the block, so doing this create a consistent of the system: Once a block has been added to the chain, it cannot be
               altered or deleted, providing a hash information of the previous block, making it strongly linked with each other.
             </p>
+            <img class="img-fluid mt-2" src="./blockchain.png">
           </div>
           <div class="topic-header">
               <h3>What is Solidity?</h3>
               <p>
                 Solidity is an object-oriented based, high-level programming language that is created by Gavin Wood - An English
                 software developer. As I was mentioned above, it is use to design "Smart Contracts". These "Contracts" act as a set of
-                instruction to control how the application work.
+                instruction to control how the application work. Smart contracts are self-executing programs that automatically execute
+                when certain conditions are met.
+              </p>
+              <p>
+                Solidity is a statically-typed language. This means thatvariables and functions must be explicitly defined before they are used,
+                just like many other programming language. This of course makes Solidity more secure, as it prevents unexpected behavior from
+                occuring due to undeclared variables or functions.
+              </p>
+              <p>
+                So it is an object-oriented programming (OOP) language, just like Java?. Well, Solidity was built based on the 
+                concept of object-oriented, but solely for the purpose of creating and designing "Smart Contracts", so it is kind of the 
+                same. It is easy to pick up if you already familiar with other OOP languages like Java. Below are some example of Solidity 
+                contract compare to Java class.
+              </p>
+              <img class="img-fluid mt-2" src="./javaEx.png">
+              <span class="caption text-muted text-center">Java Class</span>
+              <img class="img-fluid mt-2" src="./solidityEx.png">
+              <span class="caption text-muted text-center">Solidity Contract</span>
+              <p>
+                As you can see, there are some familiarities between Java class and Solidity contract. Both of it have attributes,
+                functions, and constructors. The syntax maybe a bit different, but the concept is quite the same.
+              </p>
+            </div>
+            <div class="topic-header">
+              <h3>Solidity - A contract-based programming language</h3>
+              <p>
+                So, what is the different? Well, since Solidity need to be able to handle transactions on blockchain application,
+                there are some features that are implemented for that. For example, you can see on the example above, there is an
+                attribute called owner with the type of "address". This is what you will encounter quite a lot when working with
+                Solidity, because essentially it is an attribute to track the network address of people who making transactions 
+                of assets (like cryptocurrency, nfts,etc...) on the blockchain. You will also encounter State a lot since to be 
+                able to track live actions of users on the application, you need to track the State of the transactions actively.
+              </p>
+              <p>
+                Another important feature of Solidity is its ability to interact with other contracts on the blockchain 
+                application. As I was mentioned, contract is an object use to control the work on the blockchain app. 
+                So being able to interact with other contracts allows for the creation of complex, decentralized applications 
+                that can automate various tasks and execute them without the need for a central authority.
+              </p>
+              <p>
+                So, what is the challenge for writing smart contracts in Solidity? The most important thing is security. Solidity
+                work on the concept of blockchain technology, which means it works with other people real assets (cryptocurrency,
+                nft, blockchain assets, etc...). If your smart contracts are not secure and have vulnerabilities, you can easily
+                be attacked by hacker, and your contract will be exploit, potentially leading to the lost of users assets. Being 
+                said, Solidity has a number of built-in functions that can be used to prevent common vulnerabilities, such as integer overflow and reentrancy attacks.
+              </p>
+              <p>
+                As risky as it may sound, Solidity does have a lot to offer to prevent such a fatal security risk to happen. 
+                Smart contracts are immutable, which means that once they are deployed on the blockchain, their code cannot be 
+                changed. Solidity makes it easy to write complex smart contracts by providing a range of features, such as:
+                <ul>
+                  <li>Contract inheritance: Solidity allows for multiple inheritance, which means that one contract can inherit 
+                    from several other contracts. This can make it easier to write complex contracts by breaking them down into 
+                    smaller, more manageable pieces.
+                  </li>
+                  <li>
+                    Events: Solidity allows developers to define events that can be triggered by a smart contract. Events are 
+                    useful for notifying external systems of changes to the state of a contract.
+                  </li>
+                  <li>
+                    Modifiers: Solidity allows for the creation of modifiers that can be used to add additional functionality 
+                    to functions in a contract. Modifiers can be used to restrict access to a function, check conditions before 
+                    executing a function, or modify the behavior of a function.
+                  </li>
+                  <li>
+                    Mapping: Solidity supports the use of mapping, which is a data structure that allows for key-value pairs 
+                    to be stored. Mapping is useful for storing and retrieving data in a smart contract.
+                  </li>
+                  <li>
+                    Libraries: Solidity allows for the creation of libraries, which are reusable pieces of code that can be
+                    used in multiple contracts. Libraries can help to reduce code duplication and make contracts more modular.
+                  </li>
+                </ul>
+              </p>
+              <p>
+                Above are some "safety features" that you could implements to protect your smart contracts with Solidity. Beside that,
+                there are some concepts that Solidity pursue for the purpose of protecting contracts, such as:
+                <ul>
+                  <li>
+                    Bounds checking: Solidity automatically checks array bounds to prevent buffer overflow attacks.
+                  </li>
+                  <li>
+                    Gas: Solidity uses a gas model to prevent infinite loops and excessive resource usage in smart contracts.
+                  </li>
+                  <li>
+                    Visibility: Solidity allows developers to specify the visibility of functions and variables, which can help to prevent unauthorized access to contract data.
+                  </li>
+                  <li>
+                    Type safety: Solidity is a statically-typed language, which helps to prevent type-related bugs.
+                  </li>
+                </ul>
+              </p>
+              <p>
+                That is some of the main feature of Solidity of being a "contract-based" programming language. Further on research, you will
+                find out a lot more features that Solidity have to offer to help you with manipulating blockchain applications using
+                "Smart Contracts".
               </p>
           </div>
           <div class="topic-header">
-              <h3>Smart Contract - The new era of internet</h3>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium obcaecati ipsa at ex, explicabo ratione itaque mollitia, ab odit sapiente facere, animi amet id debitis atque blanditiis. Nulla, ea explicabo.</p>
-          </div>
-          <div class="topic-header">
-              <h3>Web3 and Blockchain takes over the world</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi delectus maxime incidunt ad quo, labore suscipit a laborum id aliquid numquam ea explicabo error vero soluta unde totam accusantium consequuntur.</p>
-          </div>
-          <div class="topic-header">
-              <h3>How to use Solidity?</h3>
+              <h3>In conclusion</h3>
+              <p>Solidity is an important language for developing smart contracts on blockchain application. 
+                Offering security features, object-oriented design, and ability to interact with other contracts and the blockchain 
+                make it a powerful tool for creating and designing blockchain smart contracts. While there are still challenges to be overcome,
+                Solidity is definitely the language of choice to learn for this new era of blockchain technology.</p>
           </div>
         </div>
         <div class="col-3"></div>
