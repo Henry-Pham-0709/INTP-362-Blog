@@ -17,10 +17,9 @@ h1 {
 #wrapper {
     position: relative;
 }
-#blog-body {
-    margin-top: 50px;
-    margin-left: 300px;
-    margin-right: 300px;
+#container-fluid {
+   display: flex;
+   justify-content: space-around;
 }
 #blog-body > p {
     font-size: 20px;
