@@ -3,7 +3,7 @@ h1 {
 }
 #background::before {
     content: "";
-    background-image: url("solidityLogo.png");
+    background-image: url("./solidityLogo.png");
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
