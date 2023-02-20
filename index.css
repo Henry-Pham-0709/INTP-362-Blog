@@ -1,0 +1,46 @@
+h1 {
+    font-size: 100px;
+}
+#background::before {
+    content: "";
+    background-image: url(solidity-nedir.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    max-height: 80vh;
+    opacity: 0.8;
+}
+#wrapper {
+    position: relative;
+}
+#blog-body {
+    margin-top: 50px;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+#blog-body > p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+.topic-header {
+    text-align: left;
+}
+.topic-header > p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+.topic-header > h3 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+.page-holder {
+    min-height: 80vh;
+}
+  
+.bg-cover {
+    background-size: cover !important;
+}
